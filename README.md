@@ -14,7 +14,7 @@ QuoteVerse is a modern social media platform designed specifically for sharing a
 ### User Experience
 - **Responsive Design**: Optimized for desktop and mobile devices
 - **Clean Interface**: Minimalist design focused on content
-- **Real-time Updates**: Live notifications and messaging
+- **Real-time Updates**: Messaging
 - **Secure Authentication**: JWT-based auth with email OTP verification
 
 ## 🚀 Tech Stack
