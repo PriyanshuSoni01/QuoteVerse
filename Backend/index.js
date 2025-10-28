@@ -105,6 +105,10 @@ app.use('/api/user',userRoute)
 app.use('/api/posts', postsRoutes)
 app.use('/api/friends', friendsRoutes)
 app.use('/api/chat', chatRoutes)
+app.use('/', (req,res) => {
+  console.log("Server working fine");
+  res.json({ message: "Server working fine" });
+})
 
 app.use((err, req, res ,next) =>{
   const statusCode = err.statusCode || 500;
