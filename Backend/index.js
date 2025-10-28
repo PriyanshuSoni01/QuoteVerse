@@ -95,7 +95,7 @@ server.listen(3000, ()=>{
 
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"], // Frontend URLs
+  origin: ["http://localhost:5173", "http://localhost:5174", "https://quoteverse-frontend.onrender.com"], // Frontend URLs
   methods: "GET,POST,PUT,DELETE",
   credentials: true // if you're using cookies
 }));
