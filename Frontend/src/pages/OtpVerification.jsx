@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { sendOtp, verifyOtp } from "../../slices/authSlice.js"; 
+import { sendOtp, verifyOtp } from "../../slices/AuthSlice.js"
 import { toast } from "react-toastify";
 
 export default function OtpVerification() {
