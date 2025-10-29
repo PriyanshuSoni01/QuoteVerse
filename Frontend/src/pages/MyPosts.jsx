@@ -4,6 +4,7 @@ import { FaEdit, FaTrash, FaHeart, FaComment, FaEye, FaCalendarAlt } from 'react
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
+const API_BASE = `${import.meta.env.VITE_BACKEND_URL}/api`;
 const MyPosts = () => {
   const { currentUser } = useSelector((state) => state.auth);
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const MyPosts = () => {
         return;
       }
 
-      const response = await fetch(`http://localhost:3000/api/posts/user-posts?page=${page}&limit=10`, {
+      const response = await fetch(`${API_BASE}/posts/user-posts?page=${page}&limit=10`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
