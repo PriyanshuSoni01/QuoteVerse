@@ -61,7 +61,7 @@ const MyPosts = () => {
       setDeleteLoading(postId);
       const token = localStorage.getItem('token');
 
-      const response = await fetch(`http://localhost:3000/api/posts/${postId}`, {
+      const response = await fetch(`${API_BASE}/posts/${postId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,
